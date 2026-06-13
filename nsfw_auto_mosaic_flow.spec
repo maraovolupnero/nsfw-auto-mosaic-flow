@@ -22,7 +22,7 @@ exe = EXE(
     a.scripts,
     [],
     exclude_binaries=True,
-    name="YOLO Mosaic Tool",
+    name="NSFW Auto Mosaic Flow",
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
@@ -37,5 +37,5 @@ coll = COLLECT(
     strip=False,
     upx=True,
     upx_exclude=[],
-    name="YOLO Mosaic Tool",
+    name="NSFW Auto Mosaic Flow",
 )

@@ -49,5 +49,5 @@ if not errorlevel 1 (
   )
 )
 
-start "YOLO Mosaic Tool" ".venv\Scripts\pythonw.exe" "%~dp0main.py"
+start "NSFW Auto Mosaic Flow" ".venv\Scripts\pythonw.exe" "%~dp0main.py"
 exit /b 0

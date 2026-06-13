@@ -1,6 +1,6 @@
-# YOLO Mosaic Tool
+# NSFW Auto Mosaic Flow
 
-Ultralytics YOLO Segmentationモデルで画像内の対象領域を検出し、Pixelateモザイクを一括適用するWindows向けデスクトップアプリです。NVIDIA GPUがなくてもCPUで利用できます。
+Ultralytics YOLO SegmentationモデルでNSFW画像内の対象領域を検出し、フォルダ単位でPixelateモザイクを一括適用するWindows向けデスクトップアプリです。NVIDIA GPUがなくてもCPUで利用できます。
 
 作者: [maraovolupnero](https://github.com/maraovolupnero) / ライセンス: [MIT](LICENSE)
 
@@ -87,7 +87,7 @@ DOWNLOAD_RECOMMENDED_MODEL.bat
 
 ## 起動
 
-通常は`YOLO_Mosaic_Tool_START.bat`をダブルクリックしてください。初回は必要な環境を自動で準備します。
+通常は`NSFW_Auto_Mosaic_Flow_START.bat`をダブルクリックしてください。初回は必要な環境を自動で準備します。
 
 ```powershell
 python main.py
@@ -110,10 +110,10 @@ python -m unittest discover -s tests -v
 ## EXE化
 
 ```powershell
-pyinstaller --noconfirm --clean yolo_mosaic_tool.spec
+pyinstaller --noconfirm --clean nsfw_auto_mosaic_flow.spec
 ```
 
-生成物は`dist/YOLO Mosaic Tool/YOLO Mosaic Tool.exe`です。モデルは別途ダウンロードして`models`フォルダへ配置します。
+生成物は`dist/NSFW Auto Mosaic Flow/NSFW Auto Mosaic Flow.exe`です。モデルは別途ダウンロードして`models`フォルダへ配置します。
 
 ## ライセンス
 

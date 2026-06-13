@@ -130,7 +130,7 @@ class MainWindow(QMainWindow):
         self.queue_results: dict[int, ProcessResult] = {}
         self.manual_masks: dict[str, np.ndarray] = {}
         self.current_preview_result: ProcessResult | None = None
-        self.setWindowTitle("YOLO Mosaic Tool")
+        self.setWindowTitle("NSFW Auto Mosaic Flow")
         icon_path = _app_icon_path()
         if icon_path.is_file():
             self.setWindowIcon(QIcon(str(icon_path)))
@@ -151,7 +151,7 @@ class MainWindow(QMainWindow):
         root.setSpacing(11)
 
         header = QHBoxLayout()
-        title = QLabel("YOLO Mosaic Tool")
+        title = QLabel("NSFW Auto Mosaic Flow")
         title.setObjectName("title")
         self.subtitle = QLabel("公開前画像のプライバシー処理を、確認しながら安全に")
         self.subtitle.setObjectName("muted")
@@ -932,7 +932,7 @@ class MainWindow(QMainWindow):
 
 def run_app() -> int:
     app = QApplication.instance() or QApplication([])
-    app.setApplicationName("YOLO Mosaic Tool")
+    app.setApplicationName("NSFW Auto Mosaic Flow")
     icon_path = _app_icon_path()
     if icon_path.is_file():
         app.setWindowIcon(QIcon(str(icon_path)))
