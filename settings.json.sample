@@ -1,0 +1,31 @@
+{
+  "model_path": "models/nsfw-anime-xl-x1280.pt",
+  "input_dir": "",
+  "output_dir": "",
+  "confidence": 0.30,
+  "inference_size": 1280,
+  "high_recall_detection": true,
+  "tile_overlap": 0.20,
+  "pixel_size_mode": "auto_1_80",
+  "pixel_size": 16,
+  "expand_ratio": 0.15,
+  "feather_px": 8,
+  "target_class_mode": "names",
+  "target_class_ids": [],
+  "target_class_names": ["vagina", "penis"],
+  "preset": "recommended",
+  "copy_when_no_detection": true,
+  "keep_same_file_count": true,
+  "use_gpu_if_available": true,
+  "create_pdf_after_processing": false,
+  "pdf_filename": "mosaic_images.pdf",
+  "preview_mode": "processed",
+  "supported_extensions": [".png", ".jpg", ".jpeg", ".webp"],
+  "recommended_settings": {
+    "confidence": 0.30,
+    "pixel_size_mode": "auto_1_80",
+    "pixel_size": 20,
+    "expand_ratio": 0.15,
+    "feather_px": 8
+  }
+}

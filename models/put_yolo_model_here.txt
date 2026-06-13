@@ -1,0 +1,5 @@
+Default anime-nsfw-segm-yolo26 model file:
+
+nsfw-anime-xl-x1280.pt
+
+The app also accepts another Ultralytics segmentation/detection .pt file selected from the GUI.
