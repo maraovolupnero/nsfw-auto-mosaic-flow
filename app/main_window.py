@@ -120,6 +120,9 @@ class ModelNamesThread(QThread):
 class MainWindow(QMainWindow):
     def __init__(self) -> None:
         super().__init__()
+        application = QApplication.instance()
+        if application is not None:
+            application.setApplicationName("NSFW Auto Mosaic Flow")
         self._loading_ui = True
         self.settings = load_settings()
         self.worker: ProcessorThread | None = None
